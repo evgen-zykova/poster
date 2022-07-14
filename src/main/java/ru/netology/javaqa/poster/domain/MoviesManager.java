@@ -1,4 +1,5 @@
 package ru.netology.javaqa.poster.domain;
+
 public class MoviesManager {
 
     private int limit;
@@ -28,22 +29,21 @@ public class MoviesManager {
 
     }
 
-     public String [] findLast() {
+    public String[] findLast() {
         int resultLength;
         if (movies.length < limit) {
-           resultLength = movies.length;
+            resultLength = movies.length;
         } else {
             resultLength = limit;
         }
         String[] tmp = new String[resultLength];
-         for (int i = 0; i < tmp.length; i++) {
-             tmp[i] = movies[movies.length - 1 - i];
-         }
-         return tmp;
+        for (int i = 0; i < tmp.length; i++) {
+            tmp[i] = movies[movies.length - 1 - i];
+        }
+        return tmp;
 
-             
 
-     }
+    }
 
 }
 
