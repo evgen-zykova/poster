@@ -1,6 +1,6 @@
 package ru.netology.javaqa.poster.domain;
 
-public class Poster {
+public class MovieList {
 
     private String name;
 }
